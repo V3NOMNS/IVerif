@@ -2,89 +2,145 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>iVerif Sign Up</title>
+    <title>IVerif Sign Up</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond">
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #111;
-            color: #fff;
+            background-color: #ffffff;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 14px;
+            color: #333333;
         }
-        
-        header {
-            background-color: #000;
-            padding: 20px;
-            text-align: center;
+        .form-control {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 14px;
+            height: inherit;
         }
-        
-        main {
-            padding: 20px;
+        select.form-control  {
+            height: 3em;
         }
-        
-        footer {
-            background-color: #000;
-            padding: 10px;
-            text-align: center;
+        .form-check-label {
+            font-weight: normal;
         }
-        
-        form {
-            margin-top: 20px;
+        input[type="checkbox"], input[type=radio] {
+            vertical-align: top;
+            transform: scale(1.5);
+            margin-right: 4px;
+            margin-left: 4px;
         }
-        
-        label {
-            display: block;
-            margin-bottom: 5px;
+        .text-muted {
+            color: #333333;
+            filter: brightness(150%);
         }
-        
-        input[type="email"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        .btn {
+            font-size: 1em;
         }
-        
-        button[type="submit"],
-        button[type="button"] {
-            padding: 10px 20px;
-            background-color: #007bff;
-            border: none;
-            color: #fff;
-            cursor: pointer;
-            border-radius: 4px;
+        .btn-primary {
+            color: #ffffff;
+            background-color: #787878;
+            border-color: #000000;
+            font-size: 1.75em;
+            font-weight: bold;
         }
-        
-        button[type="submit"]:hover,
-        button[type="button"]:hover {
-            background-color: #0056b3;
+        .btn-primary.focus,
+        .btn-primary:focus,
+        .btn-primary:hover,
+        .btn-primary.active,
+        .btn-primary:active,
+        .btn-primary.active.focus,
+        .btn-primary.active:focus,
+        .btn-primary.active:hover,
+        .btn-primary:active.focus,
+        .btn-primary:active:focus,
+        .btn-primary:active:hover {
+            color: #ffffff;
+            background-color: #787878;
+            border-color: #000000;
+            filter: brightness(.80);
+        }
+        h1,.h1 {
+            font-size: 3.33em;
+            font-weight: bold;
+        }
+        h2,.h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        h3,.h3 {
+            font-size: 1.95em;
+        }
+        h4,.h4 {
+            font-size: 1.67em;
+        }
+        h5,.h5 {
+            font-size: 1.38em;
+        }
+        h6,.h6 {
+            font-size: 1.12em;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>iVerif Sign Up</h1>
-    </header>
-    <center>
-        <main>
-            <section>
-                <h2>Create an Account</h2>
-                <form action="https://formspree.io/f/xrgwealr" method="POST">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    <br>
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" placeholder="Password" required>
-                    <br>
-                <button type="submit">Sign Up</button>
-                </form>
-            </section>
-        </main>
-    </center>
 
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <section class="container col-xs-12 col-sm-8 col-sm-offset-2 col-xl-6 col-xl-offset-3 my-4">
+                    <div class="container" style="width:100%">
+                        <form class="" target="_self" enctype="multipart/form-data" action="https://formkeep.com/f/fcb70d9bd19c" accept-charset="UTF-8" method="post">
+                            <fieldset>
+                                <center><h2>IVerif Sign Up!</h2></center>
+                                <br>
+                                <div class="row">
+                                    <div class="form-group col-xs-12" id="Email:__div">
+                                        <label title="required" for="Email:">Email: *</label>
+                                        <input type="email" name="Email:" id="Email:" required="required" autofocus="autofocus" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-xs-12" id="Password:__div">
+                                        <label title="required" for="Password:">Password: *</label>
+                                        <input type="text" name="Password:" id="Password:" required="required" class="form-control" />
+                                    </div>
+                                </div>
+                                <br>
+                                <div style="opacity:0;position:absolute;top:0;left:-5000px;height:0;width:0">
+                                    <label for="subscribe_fcb70d9bd19c_43152"></label>
+                                    <input name="subscribe_fcb70d9bd19c_43152" value="" tabindex="-1" autocomplete="off"
+                                        type="email" id="email_subscribe_fcb70d9bd19c_43152" placeholder="Your email here">
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <input type="submit" value="Submit" class="btn btn-block btn-primary" data-disable-with="Submit" />
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div style='text-align: center; padding-top: 6rem; padding-bottom: 3rem'>
+                            <a style="color: #868190; line-height: 0 !important; padding: 3px; text-decoration:none; font-size:1em" target="_blank" rel="noopener noreferrer" href="https://formkeep.com/?utm_campaign=fcb70d9bd19c&amp;utm_medium=web&amp;utm_source=formkeep-landingpage-free">
+                                Free forms by FormKeep &nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112" aria-labelledby="formkeep-logo__title" role="img" style="fill: #868190; width: 3rem; margin-bottom: 3px; vertical-align: middle;">
+                                    <title id="formkeep-logo__title">FormKeep</title>
+                                    <!-- FormKeep logo SVG -->
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2023 iVerif. All rights reserved.</p>
     </footer>
+
+    <!-- Include Bootstrap JS if needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous"></script>
+    <!-- Your custom scripts can go here -->
 </body>
 </html>
