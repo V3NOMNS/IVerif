@@ -3,6 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>iVerif Sign Up</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+        
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        footer {
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        form {
+            margin-top: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button[type="submit"],
+        button[type="button"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        button[type="submit"]:hover,
+        button[type="button"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,7 +70,7 @@
     <main>
         <section>
             <h2>Create an Account</h2>
-            <form action="https://formspree.io/f/xyyqkdpz" method="POST">
+            <form action="https://formspree.io/f/your-form-id" method="POST">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Your Email" required>
                 <br>
